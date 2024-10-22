@@ -22,6 +22,7 @@ function returnInput(input) {
   return output;
 }
 
+//function rockPaperScissors an algorithm?
 function rockPaperScissors(input) {
   const random = Math.floor(Math.random() * 100);
   let opponentChoice;
@@ -124,3 +125,31 @@ DOMSelectors.scissors.addEventListener("click", function () {
 DOMSelectors.historyButton.addEventListener("click", function () {
   getHistory();
 });
+
+//algorithms
+
+// for (let i = 0; i <= random; i++) {
+//   if (i % 3 == 0) {
+//     opponentChoice = "rock";
+//   } else if (i % 2 == 0) {
+//     opponentChoice = "paper";
+//   } else {
+//     opponentChoice = "scissors";
+//   }
+// }
+
+// for (let i = 0; i < history.length; i++) {
+//   if (history[i] == "win") {
+//     win++;
+//   } else if (history[i] == "lose") {
+//     lose++;
+//   } else {
+//     draw++;
+//   }
+//   DOMSelectors.history.insertAdjacentHTML(
+//     "afterbegin",
+//     `<div class="historyCard" id="${history[i]}">
+//       <h4>Game ${i + 1}: ${history[i].toUpperCase()}</h4>
+//       </div>`
+//   );
+// }
